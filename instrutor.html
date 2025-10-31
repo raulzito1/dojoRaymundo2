@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/instrutor.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Inscrição de Instrutor</title>
+</head>
+<body>
+<div class="container">
+  <h1>Inscrição para Instrutor</h1>
+
+  <form action="/submit-instrutor" method="POST" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required maxlength="100">
+    </div>
+
+    <div class="form-group">
+      <label for="faixa">Faixa/Nível de Habilidade:</label>
+      <input type="text" id="faixa" name="faixa" required maxlength="100">
+    </div>
+
+    <div class="form-group">
+      <label for="bio">Mini Biografia (Máx. 100 caracteres):</label>
+      <textarea id="bio" name="bio" rows="4" required maxlength="100"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="foto">Foto de Perfil (BLOB):</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+    </div>
+
+    <div class="form-actions">
+      <a href="iscrição.html" class="btn-ghost">
+        Voltar
+      </a>
+      <a href="filizado.html" class="btn-ghost">
+        Finalizar Inscrição
+      </a>
+    </div>
+
+  </form> </div>
+</body>
+</html>

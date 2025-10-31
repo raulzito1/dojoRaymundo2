@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/incricaoModalidade.css">
+  <link rel="stylesheet" href="../css/instrutor.css">
+  <title>Cadastro de Nova Modalidade</title>
+</head>
+<body>
+<div class="container">
+  <h1>Cadastro de Nova Modalidade</h1>
+  <form action="/submit-modalidade" method="POST">
+
+    <div class="form-group">
+      <label for="nome">Nome da Modalidade:</label>
+      <input type="text" id="nome" name="nome" required maxlength="100">
+    </div>
+
+    <div class="form-group">
+      <label for="descricao">Descrição Detalhada:</label>
+      <textarea id="descricao" name="descricao" rows="6" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="faixa_etaria">Faixa Etária Recomendada:</label>
+      <input type="text" id="faixa_etaria" name="faixa_etaria" maxlength="100">
+    </div>
+
+    <div class="form-actions">
+      <a href="iscrição.html" class="btn-ghost">
+        Voltar
+      </a>
+      <a href="filizado.html" class="btn-ghost">
+        Cadastrar Modalidade
+      </a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/matriculaContato.css">
+  <link rel="stylesheet" href="../css/instrutor.css">
+
+  <title>Formulário de Contato</title>
+</head>
+<body>
+<div class="container">
+  <h1>Entre em Contato</h1>
+  <form action="/submit-contato" method="POST">
+
+    <div class="form-group">
+      <label for="contato_nome">Seu Nome:</label>
+      <input type="text" id="contato_nome" name="nome" required maxlength="100">
+    </div>
+
+    <div class="form-group">
+      <label for="contato_email">Seu E-mail:</label>
+      <input type="email" id="contato_email" name="email" required maxlength="120">
+    </div>
+
+    <div class="form-group">
+      <label for="contato_telefone">Telefone (Opcional):</label>
+      <input type="tel" id="contato_telefone" name="telefone" maxlength="15">
+    </div>
+
+    <div class="form-group">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    </div>
+
+    <div class="form-actions">
+      <a href="iscrição.html" class="btn-ghost">
+        Voltar
+      </a>
+      <a href="filizado.html" class="btn-ghost ">
+        Enviar Mensagem
+      </a>
+    </div>
+  </form>
+</div>
+</body>
+</html>
