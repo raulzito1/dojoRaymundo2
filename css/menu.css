@@ -1,0 +1,153 @@
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    font-family: sans-serif;
+}
+
+nav.nav .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+
+/* Yin-Yang Circle como logo */
+nav.nav .logo .circle {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+nav.nav .logo .circle::before,
+nav.nav .logo .circle::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 12.5px;
+}
+
+nav.nav .logo .circle::before {
+    top: 0;
+    background: white;
+}
+
+nav.nav .logo .circle::after {
+    bottom: 0;
+    background: white;
+}
+
+nav.nav .logo .symbol-top {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5px;
+    left: 20px;
+}
+
+nav.nav .logo .symbol-bottom {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 7.5px;
+    left: 20px;
+}
+.logo-img {
+    height: 50px;  /* ajusta o tamanho */
+    margin-right: 10px;
+}
+
+/* Navbar links */
+nav.nav .nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav.nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav.nav .nav-links a.active {
+    border-bottom: 2px solid #f00;
+}
+
+nav.nav .btn-primary {
+    background-color: red;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.nav .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Menu Mobile */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav,
+    .nav-links,
+    .container{
+        flex-direction: column;
+    }
+}

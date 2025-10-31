@@ -1,0 +1,188 @@
+body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background: #000000;}
+.container {width:90%; max-width:1100px; margin:auto;}
+.site-header {background:#111; color:#fff; padding:10px 0; position:sticky; top:0; z-index:1000;}
+.nav {display:flex; justify-content:space-between; align-items:center;}
+.nav-links {list-style:none; display:flex; gap:15px;}
+.nav-links a {color:#fff; text-decoration:none; padding:8px 12px; transition:0.3s;}
+.nav-links a:hover,.nav-links .active {background: #f8000f; border-radius:4px;}
+.btn {padding:10px 15px; border-radius:4px; text-decoration:none; display:inline-block; transition:0.3s;}
+.btn-primary {background:#e63946; color:#fff;}
+.btn-primary:hover {background:#c1121f;}
+.btn-ghost {border:1px solid #fff; color:#fff;}
+.btn-ghost:hover {background:#fff; color:#111;}
+.hero {background:url('../img/dojo.jpg') center/cover no-repeat; color:#fff; position:relative; min-height:60vh; display:flex; align-items:center;}
+.hero-overlay {position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);}
+.hero-content {position:relative; z-index:1;}
+.hero-text {max-width:600px;}
+.section {padding:50px 0;}
+.cards-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+.card {background:#fff; padding:20px; border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.instructors-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px;}
+.instructor-card {background:#fff; text-align:center; padding:15px; border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.instructor-card img {width:100%; border-radius:50%; max-width:150px;}
+.p{
+    color: white;
+}
+.logo{text-decoration: none;
+    color: white;}
+.section container1 {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.footer  {
+    color: white;
+    height: 71px;
+    background:#111;
+    padding:20px 0;
+    margin-top:30px;
+}
+.container3{
+    text-align: center;
+
+}
+.section container1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease;
+}
+
+.section container1 p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.section container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section container1 input,
+.section container1 textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section container1 input:focus,
+.section container1 textarea:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+.section container1 button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #4facfe;
+    font-weight: bold;
+}
+
+/* Reset básico */
+h1 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Contêiner responsivo */
+.container {
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.cards-grid2{
+    color: #000000;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    display: inline-block;
+
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-text .btn:hover {
+    background-color: #555;
+}
+
+.hero-img {
+    flex: 1 1 400px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-img {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}

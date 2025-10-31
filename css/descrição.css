@@ -1,0 +1,83 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+h1 { margin: 0; }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.filter-container {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.filter-btn {
+    background-color: #e9ecef;
+    color: #495057;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.filter-btn:hover {
+    background-color: #dee2e6;
+}
+.filter-btn.active {
+    background-color: #ff0000;
+    color: #fff;
+    border-color: #ff0000;
+}
+#lista-inscricoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card-inscricao {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card-inscricao img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #ff0000;
+}
+.card-inscricao h3 {
+    text-align: center;
+    margin: 0 0 10px;
+    color: #ff0000;
+}
+.card-inscricao p {
+    margin: 4px 0;
+    color: #555;
+    line-height: 1.5;
+}
+.card-inscricao p strong {
+    color: #333;
+}
+#loading {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 40px;
+}

@@ -1,0 +1,79 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #2c2c2c);
+    color: #fff;
+}
+
+/* Container do login */
+.login-container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    width: 320px;
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Formulário */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+.login-container label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-container input:focus {
+    border: 2px solid #ff0000;
+}
+
+/* Link com aparência de botão */
+.login-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ff0000;
+    color: #111;
+}

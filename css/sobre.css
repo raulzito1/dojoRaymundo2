@@ -1,0 +1,27 @@
+/* Container que envolve a logo e o h1 */
+.header-sobre {
+    /* Flexbox é o ideal para alinhar itens lado a lado e no centro vertical */
+    display: flex;
+    align-items: center;
+    /* Espaço abaixo da seção do título */
+    margin-bottom: 30px;
+}
+
+/* Estilos para a imagem da logo */
+.logo-sobre {
+    /* Tamanho da logo. Ajuste estes valores! */
+    width: 80px;
+    height: 80px;
+    /* Espaço entre a logo e o texto do h1 */
+    margin-right: 20px;
+    /* Se a sua logo for redonda/ícone, isso mantém o formato */
+    border-radius: 50%;
+}
+
+/* Ajusta o h1 para que o alinhamento funcione corretamente */
+.header-sobre h1 {
+    /* Remove a margem padrão inferior do h1 para não quebrar o alinhamento */
+    margin-bottom: 0;
+    /* Garante a cor correta do seu título */
+    /* Exemplo: color: black; ou color: #333; */
+}

@@ -1,0 +1,27 @@
+.form-container form .btn-agendar {
+    /* Define o estilo de bloco para ocupar a largura total, como um botão */
+    display: block;
+    width: 100%;
+    padding: 8px;
+
+    /* Cores e Aparência */
+    background-color: #ff0000; /* Exemplo: cor de fundo azul */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+    /* Remove a decoração de link */
+    text-decoration: none;
+
+    /* Adiciona transição para efeitos hover */
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.form-container form .btn-agendar:hover {
+    background-color: #860000; /* Cor mais escura no hover */
+}

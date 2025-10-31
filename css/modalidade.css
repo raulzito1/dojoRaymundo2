@@ -1,0 +1,41 @@
+.faixas-judo {
+    display: flex;
+    flex-wrap: wrap;          /* Quebra linha se precisar */
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #000000;
+}
+
+.faixa {
+    width: 250px;             /* Largura fixa */
+    height: 250px;            /* Mesma altura — quadrado */
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faixa:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.faixa h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.faixa p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 0 10px;
+    color: black;
+}

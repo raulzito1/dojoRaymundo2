@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #2c2c2c);
+    color: #fff;
+}
+
+/* Container do login */
+.login-container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    width: 340px;
+    max-width: 90%;
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Formulário */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.login-container label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+/* Inputs */
+.login-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container input::placeholder {
+    color: #888;
+}
+
+.login-container input:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+/* Link "Esqueci minha senha" */
+.forgot-password-link {
+    display: block;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Botão de Entrar */
+.login-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #d60000; /* Tom de vermelho mais escuro */
+    transform: translateY(-2px); /* Efeito de elevação */
+}

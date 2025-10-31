@@ -1,0 +1,85 @@
+/* --- Estilo Geral da Página (você já deve ter isso) --- */
+body {
+    background-color: #000;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* =============================================
+  === SUBSTITUA SEU CSS DE BOTÃO POR ESTE ===
+  =============================================
+*/
+
+/* 1. Contêiner dos Botões */
+.form-actions {
+    display: flex;
+    justify-content: center;  /* Centraliza os botões (como na imagem) */
+    align-items: center;
+    gap: 20px;                /* Cria um espaço entre os botões */
+    margin-top: 30px;
+}
+
+/* 2. Estilo "Vazado" (Ghost Button) para fundo BRANCO */
+.btn-ghost {
+    background-color: transparent;   /* Fundo transparente */
+    color: #000000;               /* Texto vermelho */
+    border: 2px solid #000000;     /* Borda vermelha */
+
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;     /* Opcional: deixa o texto em maiúsculas */
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;     /* Efeito suave */
+}
+
+/* 3. Efeito ao passar o mouse */
+.btn-ghost:hover {
+    background-color: #000000;   /* Fundo fica vermelho */
+    color: white;              /* Texto fica branco */
+}

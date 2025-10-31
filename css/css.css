@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.texto p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.lista span {
+    color: #e63946;
+    margin-right: 10px;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+.badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #e63946;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.badge span {
+    font-size: 0.8rem;
+    display: block;
+}
